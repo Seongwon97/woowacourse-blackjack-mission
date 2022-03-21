@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class HoldingCardTest {
+public class HoldingCardsTest {
 
     @Test
     @DisplayName("Ace가 포함되지 않은 카드의 합을 올바르게 계산한다.")
