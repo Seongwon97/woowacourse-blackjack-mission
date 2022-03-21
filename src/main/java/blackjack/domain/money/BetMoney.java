@@ -14,11 +14,11 @@ public class BetMoney {
     }
 
     private void validateMoney(int money) {
-        validateNegative(money);
+        validatePositive(money);
         validateDivideByThousand(money);
     }
 
-    private void validateNegative(int money) {
+    private void validatePositive(int money) {
         if (money <= 0) {
             throw new IllegalArgumentException(ERROR_NEGATIVE_MONEY);
         }

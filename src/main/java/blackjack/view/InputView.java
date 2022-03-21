@@ -22,6 +22,7 @@ public class InputView {
     public static List<String> inputUsersName() {
         System.out.println(INPUT_USERNAME_GUIDE);
         return Arrays.stream(scanner.nextLine().split(USERNAME_SEPARATOR, -1))
+                .map(String::trim)
                 .collect(Collectors.toList());
     }
 

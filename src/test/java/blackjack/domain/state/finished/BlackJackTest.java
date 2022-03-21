@@ -25,9 +25,9 @@ class BlackJackTest {
                         new Card(CardNumber.QUEEN, CardType.CLOVER)));
         Deck deck = new Deck(cardGenerator);
 
-        State state = new Init();
-        state = state.drawCard(deck);
-        state = state.drawCard(deck);
+        State state = new Init()
+                .drawCard(deck)
+                .drawCard(deck);
 
         BetMoney betMoney = new BetMoney(10000);
 

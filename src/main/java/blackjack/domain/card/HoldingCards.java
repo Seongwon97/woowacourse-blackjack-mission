@@ -28,7 +28,7 @@ public class HoldingCards {
 
     public int cardScore() {
         int score = cards.stream()
-                .mapToInt(Card::getNumber)
+                .mapToInt(card -> card.getCardNumber().getNumber())
                 .sum();
 
         if (score < BUST_STANDARD) {
